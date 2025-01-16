@@ -52,6 +52,11 @@ public class Scatter(IScatterSource data) : IPlottable, IHasLine, IHasMarker, IH
     public double ScaleX { get; set; } = 1;
     public double ScaleY { get; set; } = 1;
 
+    public Scatter(ScatterSourceDoubleArray scatterSourceDoubleArray = new([], []))
+    {
+        
+    }
+    
     /// <summary>
     /// The style of lines to use when connecting points.
     /// </summary>
